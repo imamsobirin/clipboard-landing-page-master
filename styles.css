@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+
+:root {
+  /*primary*/
+  --Strong-Cyan: rgb(38, 186, 164);
+  --Light-Blue: rgb(97, 115, 255);
+  /*Neutral*/
+  --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+  --Grayish-Blue: rgb(159, 171, 178);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+p {
+  color: var(--Grayish-Blue);
+}
+body {
+  font-size: 18px;
+  background-image: url(./images/bg-header-desktop.png);
+  background-position: top;
+  line-height: 1.6;
+  background-repeat: no-repeat;
+}
+
+.pd-1-2 {
+  margin: 40px 0 20px;
+  color: var(--Dark-Grayish-Blue);
+}
+h3 {
+  color: var(--Dark-Grayish-Blue);
+}
+.logo {
+  display: block;
+}
+.header {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  margin: 30px auto 0;
+}
+.header .logo {
+  width: 100px;
+  margin-top: 40px;
+}
+.btn {
+  padding: 15px 30px;
+  color: white;
+  border: 0;
+  outline: none;
+  border-radius: 35px;
+  margin-left: 20px;
+  font-size: inherit;
+  font-weight: lighter;
+  cursor: pointer;
+}
+.btn-green {
+  background-color: var(--Strong-Cyan);
+  box-shadow: 0 6px 10px 0 rgba(38, 186, 164, 0.2);
+}
+.btn-blue {
+  background-color: var(--Light-Blue);
+  box-shadow: 0 6px 10px 0 rgba(97, 115, 255, 0.2);
+}
+
+.section-m {
+  margin: 80px auto;
+  text-align: center;
+  width: 50%;
+}
+
+.section-c {
+  margin: 70px auto;
+  width: 80%;
+}
+
+.section-c p {
+  font-size: 16px;
+}
+
+.section-2__2 {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.computer-img img {
+  margin-left: -25%;
+  max-width: 100%;
+  display: block;
+}
+
+.contents-group {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-left: -10%;
+}
+
+.section-4 img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.section-5-1 {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.item {
+  width: 30%;
+}
+.item__icon {
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+.item p {
+  margin-top: 25px;
+}
+
+.item img {
+  display: block;
+  margin: auto auto;
+}
+
+.clients {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+footer {
+  width: 100%;
+  background-color: rgba(159, 171, 178, 0.1);
+  padding: 40px 0;
+}
+
+.container-ft {
+  margin: auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.links {
+  display: flex;
+  width: 50%;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.links > li {
+  width: 30%;
+  list-style: none;
+}
+
+.links a {
+  text-decoration: none;
+  color: var(--Dark-Grayish-Blue);
+  font-weight: bold;
+}
+.links a:hover {
+  color: var(--Strong-Cyan);
+}
+
+.container-ft img {
+  width: 50px;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+.soc-icons {
+  display: flex;
+  gap: 20px;
+}
+.soc-icons a i {
+  color: var(--Dark-Grayish-Blue);
+  font-size: 1.5rem;
+}
+
+.soc-icons a i:hover {
+  color: var(--Strong-Cyan);
+}
+
+@media screen and (max-width: 428px) {
+  * {
+    line-height: 1.4;
+    text-align: center;
+  }
+  body {
+    padding: 0 10%;
+    margin: auto;
+    background-image: url(./images/bg-header-mobile.png);
+    background-size: 100%;
+  }
+  .section-m,
+  .section-c {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  div[class^="section"] {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .btn {
+    width: 100%;
+    margin: 0 0 30px 0;
+  }
+  .computer-img img {
+    margin-left: 0;
+    margin-bottom: 50px;
+  }
+
+  .contents-group {
+    margin-left: 0%;
+  }
+  .item {
+    width: 100%;
+  }
+  .clients {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .container-ft {
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .links {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    width: 100%;
+  }
+  .links > li {
+    width: 100%;
+  }
+}
